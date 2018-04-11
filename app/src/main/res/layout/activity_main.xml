@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewFlipper
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:id="@+id/viewFlipper"><![CDATA[
+        android:layout_height="">
+
+
+
+
+
+        ]]>
+
+        <include
+            android:id="@+id/vue_menu"
+            layout="@layout/vue_menu"
+            android:layout_width="match_parent"
+            android:layout_height="500dp" />
+        <include
+            android:id="@+id/vue_recherche"
+            layout="@layout/vue_recherche"
+            android:layout_width="match_parent"
+            android:layout_height="500dp" />
+        <include
+            android:id="@+id/vue_cam"
+            layout="@layout/vue_cam"
+            android:layout_width="match_parent"
+            android:layout_height="500dp" />
+
+        <include
+            android:id="@+id/vue_image"
+            layout="@layout/vue_image"
+            android:layout_width="match_parent"
+            android:layout_height="500dp" />
+
+    </ViewFlipper>
+
+    <Button
+        android:id="@+id/But1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="But1" />
+
+    <Button
+        android:id="@+id/But2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/But1"
+        android:text="But2" />
+
+    <Button
+        android:id="@+id/But3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/But4"
+        android:text="Vue CAM" />
+
+    <Button
+        android:id="@+id/But4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="iamge " />
+
+</RelativeLayout>
